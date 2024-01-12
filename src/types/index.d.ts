@@ -1,19 +1,9 @@
-import { ButtonProps } from '@homework-task/types/buttonProps';
-import { CardProps } from '@homework-task/types/cardProps';
-import { CardsProps } from '@homework-task/types/cardsProps';
-import { HeroProps } from '@homework-task/types/heroProps';
-import { ItemsShowcaseProps } from '@homework-task/types/itemsShowcaseProps';
-import { LayoutProps } from '@homework-task/types/layoutProps';
-import { PanelShowcaseProps } from '@homework-task/types/panelShowcaseProps';
-import { TrustBarProps } from '@homework-task/types/trustBarProps';
-
-export {
-    ButtonProps,
-    CardProps,
-    CardsProps,
-    HeroProps,
-    ItemsShowcaseProps,
-    LayoutProps,
-    PanelShowcaseProps,
-    TrustBarProps,
-};
+export * from '@homework-task/types/buttonProps';
+export * from '@homework-task/types/cardProps';
+export * from '@homework-task/types/cardsProps';
+export * from '@homework-task/types/heroProps';
+export * from '@homework-task/types/itemsShowcaseProps';
+export * from '@homework-task/types/layoutProps';
+export * from '@homework-task/types/panelShowcaseProps';
+export * from '@homework-task/types/trustBarProps';
+export * from '@homework-task/types/user';

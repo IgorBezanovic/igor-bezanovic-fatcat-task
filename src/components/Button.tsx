@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 
-export const Button = ({ children, onClick, className }) => {
+import { ButtonProps } from '@homework-task/types';
+
+export const Button = ({ children, onClick, className }: ButtonProps) => {
     return (
         <button
             className={clsx(

@@ -1,4 +1,6 @@
-export const ItemsShowcase = ({ items }) => {
+import { ItemsShowcaseProps } from '@homework-task/types';
+
+export const ItemsShowcase = ({ items }: ItemsShowcaseProps) => {
     return (
         <div className="flex justify-center items-center">
             <div className="grid grid-cols-2 gap-8 w-8/12">

@@ -12,13 +12,24 @@ const config = {
         'plugin:react/recommended',
         'plugin:react/jsx-runtime',
         'plugin:react-hooks/recommended',
-        'eslint:recommended',
         'plugin:import/recommended',
         'plugin:prettier/recommended',
         'prettier',
     ],
     ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js'],
-    settings: {react: {version: '18.2'}},
+    settings: {
+        react: {
+            version: '18.2'
+        },
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.jsx', '.ts', '.tsx']
+            },
+            typescript: {
+                alwaysTryTypes: true
+            }
+        },
+    },
     parser: '@typescript-eslint/parser',
     plugins: [
         'react-refresh',
@@ -31,8 +42,8 @@ const config = {
         'prettier'
     ],
     parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
+        ecmaVersion: 'latest',
+        sourceType: 'module',
         ecmaFeatures: {
             jsx: true
         }

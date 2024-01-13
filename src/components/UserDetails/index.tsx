@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 
 import { User } from '@homework-task/types';
-import { userDetail } from '@homework-task/utils/constants';
+import { userDetails } from '@homework-task/utils/constants';
 
-export const UserDetails = ({ userDetails }: { userDetails: User }) => (
+export const UserDetails = ({ user }: { user: User }) => (
     <li
         className={clsx(
             'flex',
@@ -16,7 +16,7 @@ export const UserDetails = ({ userDetails }: { userDetails: User }) => (
             'shadow'
         )}
     >
-        {userDetail.map((details) => (
+        {userDetails.map((details) => (
             <p
                 key={details.id}
                 className={clsx(
@@ -30,7 +30,7 @@ export const UserDetails = ({ userDetails }: { userDetails: User }) => (
             >
                 <details.icon />
                 <span className={clsx('pl-5', 'break-all', 'text-sm')}>
-                    {userDetails[details.property as keyof typeof userDetails]}
+                    {user[details.property as keyof typeof user]}
                 </span>
             </p>
         ))}

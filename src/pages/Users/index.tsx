@@ -1,17 +1,15 @@
 import clsx from 'clsx';
 import { useQuery } from 'react-query';
 
-import { Hero } from '@homework-task/components/Hero';
+import { Hero, UserDetails } from '@homework-task/components';
 import { getUsers } from '@homework-task/hooks/getUsers';
-
-import { UserDetails } from './UserDetails';
 
 export const Users = () => {
     const { data: users, isLoading, isError } = useQuery('users', getUsers);
 
     return (
         <div>
-            <Hero title="User List" image="public/media/hero.png" />
+            <Hero title="User List" image="media/hero.png" />
             {isLoading ? (
                 <p>Loading...</p>
             ) : isError ? (
@@ -21,19 +19,16 @@ export const Users = () => {
                     <ul
                         className={clsx(
                             'grid',
-                            'grid-cols-2', // Default: 2 columns
-                            'md:grid-cols-3', // 3 columns for medium screens and larger
+                            'grid-cols-2',
+                            'md:grid-cols-3',
                             'lg:grid-cols-4',
                             'gap-5'
                         )}
                     >
                         {users &&
                             users.length &&
-                            users.map((userDetails) => (
-                                <UserDetails
-                                    key={userDetails.id}
-                                    userDetails={userDetails}
-                                />
+                            users.map((user) => (
+                                <UserDetails key={user.id} user={user} />
                             ))}
                     </ul>
                 </div>

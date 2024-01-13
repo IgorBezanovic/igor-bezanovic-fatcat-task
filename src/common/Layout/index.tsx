@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Outlet } from 'react-router-dom';
 
-import { Header } from '@homework-task/components/Header';
+import { Header } from '@homework-task/components';
 
 export const Layout = () => {
     return (

@@ -7,7 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { SuspenseLoader } from '@homework-task/common';
 import { routes } from '@homework-task/routes';
 
-import './styles.css';
+import '@homework-task/styles.css';
 
 const queryClient = new QueryClient();
 

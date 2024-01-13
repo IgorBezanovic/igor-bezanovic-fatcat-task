@@ -1,2 +1,2 @@
-export * from './Landing';
-export * from './Users';
+export * from '@homework-task/pages/Landing';
+export * from '@homework-task/pages/Users';

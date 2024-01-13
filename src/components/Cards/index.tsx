@@ -1,8 +1,7 @@
 import clsx from 'clsx';
 
+import { Button } from '@homework-task/components';
 import { CardsProps } from '@homework-task/types';
-
-import { Button } from './Button';
 
 export const Cards = ({ cards }: CardsProps) => {
     return (

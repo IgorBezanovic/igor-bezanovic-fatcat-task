@@ -1,2 +1,2 @@
-export * from './Layout';
-export * from './SuspenseLoader';
+export * from '@homework-task/common/Layout';
+export * from '@homework-task/common/SuspenseLoader';

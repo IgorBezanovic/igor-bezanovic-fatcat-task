@@ -1,5 +1,8 @@
 ## Igor-Bezanovic-FatCat-Task
 
+After pulling the project you need to add in the root of project .env file with following data:
+`VITE_API_URL="https://jsonplaceholder.typicode.com/`
+
 ### Install dependencies
 
 `npm install`

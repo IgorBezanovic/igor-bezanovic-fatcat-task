@@ -1,11 +1,10 @@
 import clsx from 'clsx';
-import { useQuery } from 'react-query';
 
 import { Hero, UserDetails } from '@homework-task/components';
-import { getUsers } from '@homework-task/hooks/getUsers';
+import { useUsers } from '@homework-task/pages/Users/hooks/useUsers';
 
 export const Users = () => {
-    const { data: users, isLoading, isError } = useQuery('users', getUsers);
+    const { data: users, isLoading, isError } = useUsers();
 
     return (
         <div>

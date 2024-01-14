@@ -23,7 +23,7 @@ export const PanelShowcase = ({ items }: PanelShowcaseProps) => {
                             'flex-col',
                             'gap-2',
                             'justify-center',
-                            ' items-center',
+                            'items-center',
                             'text-center'
                         )}
                     >

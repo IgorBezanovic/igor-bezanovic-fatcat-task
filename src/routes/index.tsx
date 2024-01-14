@@ -1,5 +1,5 @@
 import { Layout } from '@homework-task/common';
-import { Landing, Users } from '@homework-task/pages';
+import { Landing, Users, Form } from '@homework-task/pages';
 
 export const routes = [
     {
@@ -16,7 +16,7 @@ export const routes = [
             },
             {
                 path: '/form-generator',
-                element: <Users />,
+                element: <Form />,
             },
             {
                 path: '/page-generator',

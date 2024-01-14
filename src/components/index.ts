@@ -6,5 +6,6 @@ export * from '@homework-task/components/Hero';
 export * from '@homework-task/components/ItemsShowcase';
 export * from '@homework-task/components/PanelShowcase';
 export * from '@homework-task/components/Section';
+export * from '@homework-task/components/Title';
 export * from '@homework-task/components/TrustBar';
 export * from '@homework-task/components/UserDetails';

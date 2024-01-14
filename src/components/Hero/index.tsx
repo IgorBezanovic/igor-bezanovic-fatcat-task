@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 
+import { Title } from '@homework-task/components';
 import { HeroProps } from '@homework-task/types';
 
 export const Hero = ({ title, image }: HeroProps) => {
@@ -17,7 +18,7 @@ export const Hero = ({ title, image }: HeroProps) => {
             )}
         >
             <div className={clsx('w-4/12')}>
-                <h1 className={clsx('text-3xl', 'font-bold')}>{title}</h1>
+                <Title title={title} />
             </div>
             <div className={clsx('w-4/12')}>
                 <img src={image} height="100%" alt="Hero" loading="eager" />

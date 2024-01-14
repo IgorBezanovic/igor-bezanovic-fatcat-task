@@ -2,7 +2,13 @@ import clsx from 'clsx';
 
 import { ButtonProps } from '@homework-task/types';
 
-export const Button = ({ children, onClick, className }: ButtonProps) => {
+export const Button = ({
+    children,
+    onClick,
+    className,
+    type,
+    disabled,
+}: ButtonProps) => {
     return (
         <button
             className={clsx(
@@ -13,6 +19,8 @@ export const Button = ({ children, onClick, className }: ButtonProps) => {
                 'text-white',
                 className
             )}
+            disabled={disabled}
+            type={type}
             onClick={onClick}
         >
             {children}

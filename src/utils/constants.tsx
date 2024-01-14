@@ -80,3 +80,16 @@ export const userDetails = [
         icon: PhoneOutlined,
     },
 ];
+
+export const images = [
+    'media/cats/cat_1.png',
+    'media/cats/cat_2.png',
+    'media/cats/cat_3.png',
+    'media/cats/cat_4.png',
+    'media/cats/cat_5.png',
+    'media/cats/cat_6.png',
+    'media/cats/cat_7.png',
+    'media/cats/cat_8.png',
+    'media/cats/cat_9.png',
+    'media/cats/cat_10.png',
+];

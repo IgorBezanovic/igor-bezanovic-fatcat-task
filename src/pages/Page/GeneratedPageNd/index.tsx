@@ -5,6 +5,10 @@ const sectionProps = {
     background: 'bg-primary',
 };
 
+const sectionPropsNd = {
+    background: 'bg-cream',
+};
+
 const heroProps = {
     title: 'Page No2 - FatCat Task',
     image: 'media/home-hero.webp',
@@ -16,8 +20,13 @@ const trustBarProps = {
 };
 
 const titleProps = {
-    title: 'Igor Bezanovic',
+    title: 'Igor Bezanovic - FatCat Task',
     style: ['text-white', 'ml-40', 'my-10'],
+};
+
+const hiringWorldwideProps = {
+    title: 'FatCat Coders',
+    image: 'media/hiring-worldwide.svg',
 };
 
 export const pageTwo = [
@@ -36,6 +45,16 @@ export const pageTwo = [
             {
                 type: 'trustBar',
                 props: { ...trustBarProps },
+            },
+        ],
+    },
+    {
+        type: 'section',
+        props: { ...sectionPropsNd },
+        components: [
+            {
+                type: 'hiringWorldwide',
+                props: { ...hiringWorldwideProps },
             },
         ],
     },

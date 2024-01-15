@@ -52,7 +52,7 @@ export const navigationItems = [
         route: '/page-generator-one',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Gen page 2',
         route: '/page-generator-two',
     },
@@ -97,4 +97,31 @@ export const images = [
     'media/cats/cat_8.png',
     'media/cats/cat_9.png',
     'media/cats/cat_10.png',
+];
+
+export const hiringWorldwideItems = [
+    {
+        id: 1,
+        amount: '5',
+        sign: '+',
+        description: 'Years in the market',
+    },
+    {
+        id: 2,
+        amount: '50',
+        sign: '+',
+        description: 'Launched products',
+    },
+    {
+        id: 3,
+        amount: '150',
+        sign: '+',
+        description: 'Hired candidates',
+    },
+    {
+        id: 4,
+        amount: '20K',
+        sign: '+',
+        description: 'Candidates in the pool',
+    },
 ];

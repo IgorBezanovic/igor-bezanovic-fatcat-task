@@ -14,6 +14,12 @@ const trustBarProps = {
     images,
 };
 
+const aboutHeroProps = {
+    title: 'FatCat is all about',
+    text: 'growing together.',
+    image: 'media/about-hero.webp',
+};
+
 export const pageOne = [
     {
         type: 'section',
@@ -26,6 +32,16 @@ export const pageOne = [
             {
                 type: 'trustBar',
                 props: { ...trustBarProps },
+            },
+        ],
+    },
+    {
+        type: 'section',
+        props: { ...sectionProps },
+        components: [
+            {
+                type: 'aboutHero',
+                props: { ...aboutHeroProps },
             },
         ],
     },

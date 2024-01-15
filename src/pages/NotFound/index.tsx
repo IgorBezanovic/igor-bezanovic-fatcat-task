@@ -5,6 +5,7 @@ import { Button } from '@homework-task/components';
 
 export const NotFound = () => {
     const navigate = useNavigate();
+
     return (
         <section
             className={clsx(

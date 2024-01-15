@@ -1,6 +1,13 @@
 import React from 'react';
 
-import { Hero, Section, Title, TrustBar } from '@homework-task/components';
+import {
+    AboutHero,
+    Hero,
+    HiringWorldwide,
+    Section,
+    Title,
+    TrustBar,
+} from '@homework-task/components';
 import { Page } from '@homework-task/types';
 
 export const PageGenerator = ({ data }: { data: Page[] }) => {
@@ -22,7 +29,7 @@ export const PageGenerator = ({ data }: { data: Page[] }) => {
 
                 return (
                     <RootComponentType
-                        key={rootComponentIndex}
+                        key={`${rootComponentIndex}_${section.type}`}
                         {...section.props}
                     >
                         {section.components.map((component, componentIndex) => {
@@ -38,6 +45,12 @@ export const PageGenerator = ({ data }: { data: Page[] }) => {
                                 case 'title':
                                     ComponentType = Title;
                                     break;
+                                case 'aboutHero':
+                                    ComponentType = AboutHero;
+                                    break;
+                                case 'hiringWorldwide':
+                                    ComponentType = HiringWorldwide;
+                                    break;
                                 default:
                                     alert(
                                         `Unknown component type: ${component.type}`
@@ -49,7 +62,7 @@ export const PageGenerator = ({ data }: { data: Page[] }) => {
 
                             return (
                                 <ComponentType
-                                    key={componentIndex}
+                                    key={`${componentIndex}_${component.type}`}
                                     {...component.props}
                                 />
                             );

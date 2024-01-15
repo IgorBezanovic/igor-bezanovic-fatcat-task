@@ -2,7 +2,7 @@ import { FormEventHandler } from 'react';
 
 import { UseFormRegister, FormState } from 'react-hook-form';
 
-import { Post } from './post';
+import { Post } from '@homework-task/types';
 
 export type RenderFormFunctions = (args: {
     register: UseFormRegister<Post>;

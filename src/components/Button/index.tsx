@@ -17,6 +17,7 @@ export const Button = ({
                 'py-2',
                 'bg-black',
                 'text-white',
+                'hover:bg-primary',
                 className
             )}
             disabled={disabled}

@@ -39,7 +39,7 @@ export const Card = ({ title, text, link }: CardProps) => (
             )}
         >
             Read more
-            <img src="/media/landing/arrow-purple.svg" alt="" />
+            <img src="/media/landing/arrow-purple.svg" alt="Arrow purple" />
         </a>
     </div>
 );

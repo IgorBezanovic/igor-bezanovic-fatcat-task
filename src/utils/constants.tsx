@@ -48,8 +48,13 @@ export const navigationItems = [
     },
     {
         id: 4,
-        title: 'Page G',
-        route: '/page-generator',
+        title: 'Gen page 1',
+        route: '/page-generator-one',
+    },
+    {
+        id: 4,
+        title: 'Gen page 2',
+        route: '/page-generator-two',
     },
 ];
 

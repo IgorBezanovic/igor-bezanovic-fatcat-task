@@ -1,5 +1,13 @@
 import { Layout } from '@homework-task/common';
-import { Landing, Users, Form } from '@homework-task/pages';
+import {
+    Landing,
+    Users,
+    Form,
+    PageGenerator,
+    NotFound,
+} from '@homework-task/pages';
+import { pageTwo } from '@homework-task/pages/Page/GeneratedPageNd';
+import { pageOne } from '@homework-task/pages/Page/GeneratedPageSt';
 
 export const routes = [
     {
@@ -19,17 +27,17 @@ export const routes = [
                 element: <Form />,
             },
             {
-                path: '/page-generator',
-                element: <Users />,
+                path: '/page-generator-one',
+                element: <PageGenerator data={pageOne} />,
+            },
+            {
+                path: '/page-generator-two',
+                element: <PageGenerator data={pageTwo} />,
             },
         ],
     },
     {
-        path: '/error',
-        element: <Users />,
-    },
-    {
         path: '*',
-        element: <Users />,
+        element: <NotFound />,
     },
 ];

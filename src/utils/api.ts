@@ -6,8 +6,8 @@ export const client = axios.create({
     baseURL: import.meta.env.VITE_API_URL as string,
 });
 
-export const request = async ({ ...options }) => {
-    const onSuccess = (response: AxiosResponse) => response.data;
+export const request = async <T>({ ...options }) => {
+    const onSuccess = (response: AxiosResponse<T>) => response.data;
     const onError = (error: AxiosError) => {
         throw error;
     };

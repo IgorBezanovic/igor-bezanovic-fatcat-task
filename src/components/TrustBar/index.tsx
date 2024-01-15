@@ -1,8 +1,6 @@
 import Marquee from 'react-fast-marquee';
 
-import { TrustBarProps } from '@homework-task/types';
-
-export const TrustBar = ({ images }: TrustBarProps) => {
+export const TrustBar = ({ images }: { images: string[] }) => {
     return (
         <Marquee>
             {images.map((image) => (

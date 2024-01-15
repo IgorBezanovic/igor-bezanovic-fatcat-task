@@ -28,7 +28,11 @@ export const Form = () => {
                 <div className={clsx('flex', 'flex-col', 'mb-5')}>
                     <label
                         htmlFor="title"
-                        className={clsx('mb-2', 'text-lg', 'md:text-xl')}
+                        className={clsx(
+                            'mb-2',
+                            'md:text-xl',
+                            'hover:text-primary'
+                        )}
                     >
                         Title:
                     </label>
@@ -37,10 +41,12 @@ export const Form = () => {
                             'mb-1',
                             'p-2',
                             'outline-none',
-                            'border-2',
+                            'border',
                             'border-solid',
+                            'border-gray40',
                             'rounded-md',
-                            'shadow-md'
+                            'shadow-md',
+                            'focus:border-primary'
                         )}
                         {...register('title')}
                         type="text"
@@ -62,7 +68,11 @@ export const Form = () => {
                 <div className={clsx('flex', 'flex-col')}>
                     <label
                         htmlFor="body"
-                        className={clsx('mb-2', 'text-lg', 'md:text-xl')}
+                        className={clsx(
+                            'mb-2',
+                            'md:text-xl',
+                            'hover:text-primary'
+                        )}
                     >
                         Body:
                     </label>
@@ -72,11 +82,13 @@ export const Form = () => {
                             'p-2',
                             'resize-none',
                             'outline-none',
-                            'border-2',
+                            'border',
                             'border-solid',
+                            'border-gray40',
                             'rounded-md',
                             'shadow-md',
-                            'h-40'
+                            'h-40',
+                            'focus:border-primary'
                         )}
                         {...register('body')}
                         id="body"
@@ -107,6 +119,13 @@ export const Form = () => {
                 <div className={clsx('w-11/12', 'md:w-1/2', 'mx-auto')}>
                     <div className={clsx('w-full')}>
                         <Title title={'Send a new post'} />
+                        <p className={clsx('mt-2', 'text-justify')}>
+                            With utmost respect for your opinion, we emphasize
+                            the importance we place on client experience. Your
+                            comments and feedback are invaluable, and we highly
+                            appreciate every valuable contribution you share
+                            with us.
+                        </p>
                         <FormGenerator renderForm={renderForm} />
                     </div>
                 </div>

@@ -21,7 +21,7 @@ const trustBarProps = {
 
 const titleProps = {
     title: 'Igor Bezanovic - FatCat Task',
-    style: ['text-white', 'ml-40', 'my-10'],
+    style: ['text-white', 'my-10', 'text-center'],
 };
 
 const hiringWorldwideProps = {

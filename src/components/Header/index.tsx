@@ -1,9 +1,11 @@
 import clsx from 'clsx';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { navigationItems } from '@homework-task/utils/constants';
 
 export const Header = () => {
+    const location = useLocation();
+
     return (
         <header
             className={clsx(
@@ -38,7 +40,9 @@ export const Header = () => {
                         className={clsx(
                             'text-black',
                             'leading-normal',
-                            'font-medium'
+                            'font-medium',
+                            'hover:text-primary',
+                            { 'text-primary': item.route === location.pathname }
                         )}
                         to={item.route}
                     >

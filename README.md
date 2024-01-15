@@ -3,6 +3,9 @@
 After pulling the project you need to add in the root of project .env file with following data:
 `VITE_API_URL="https://jsonplaceholder.typicode.com/`
 
+Project is also deployed on Vercel cloud, url:
+https://igor-bezanovic-fatcat-task-ksq0eke2u-igorica1602.vercel.app/
+
 ### Install dependencies
 
 `npm install`
